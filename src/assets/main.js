@@ -9,6 +9,8 @@ $.ajax({
         $('<a href="'+badge.url+'" target="_blank" class="btn btn-primary">See Course</a>').appendTo(badgeDiv);
         return badgeDiv;
     });
-    $('#badges').html(badgeElements);
+    $('#badges').detach()
+                .html(badgeElements)
+                .appendTo('.wrapper');
     }
 });
