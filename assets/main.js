@@ -6,7 +6,7 @@ $.ajax({
         var badgeDiv = $('<div class="course"></div>');
         $('<h3>'+badge.title+'</h3>').appendTo(badgeDiv);
         $('<img src="'+badge.badge+'">').appendTo(badgeDiv);
-        $('<a href="'+badge.url+'" target="_blank" class="btn btn-primary">See Course</a>').appendTo(badgeDiv);
+        //$('<a href="'+badge.url+'" target="_blank" class="btn btn-primary">See Course</a>').appendTo(badgeDiv);
         return badgeDiv;
     });
     $('#badges').detach()
